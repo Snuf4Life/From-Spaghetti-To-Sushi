@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ImageProcessor-Core-Release2": {
+      "commandName": "Project",
+      "commandLineArgs": "src:Images\\Src dest:Images\\Dest"
+    }
+  }
+}
