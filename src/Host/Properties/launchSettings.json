@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Host": {
+      "commandName": "Project",
+      "commandLineArgs": "src=C:\\Users\\snuf0\\Source\\Repos\\From-Spaghetti-To-Sushi\\src\\Images\\Src dest=Images\\Dest"
+    }
+  }
+}

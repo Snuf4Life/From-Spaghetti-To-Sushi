@@ -6,7 +6,7 @@ using System.IO;
 
 namespace ImageProcessor_Core_Release2
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
