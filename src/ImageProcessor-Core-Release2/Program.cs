@@ -39,19 +39,15 @@ namespace ImageProcessor_Core_Release2
             Console.WriteLine(name);
 
             using (var outStream = new FileStream(target, FileMode.Create))
-            //using (var outStream1 = new FileStream(target1, FileMode.Create))
-            // Initialize the ImageFactory using the overload to preserve EXIF metadata.
-            
-            using (FileStream output = File.OpenWrite(name))
             {
-                Image image = new Image(photoBytes);
+
+                var image = new Image(photoBytes);
                 image.MaxHeight = 600;
                 image.MaxWidth = 600;
                 image.Resize(image.MaxHeight, image.MaxHeight)
                      .Grayscale()
                      .Save(outStream);
             }
-
         }
     }
 }
