@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>C:\Users\snuf0\Source\Repos\From-Spaghetti-To-Sushi\src\Build\</OutputPath>
+    <OutputPath>C:\Users\snuf0\Source\Repos\From-Spaghetti-To-Sushi\src\Build\Host</OutputPath>
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
