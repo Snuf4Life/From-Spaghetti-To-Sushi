@@ -4,6 +4,6 @@ namespace LogicContracs
 {
     public interface ILogic
     {
-        void Arguments(string[] args);
+        void ImagePath(params string[] paths);
     }
 }

@@ -4,7 +4,8 @@ using System.Text;
 
 namespace ImageProcessingContracts
 {
-    interface Interface1
+    interface IImageProcessingFactory
     {
+        void setImageSrc(byte[] imageSrc);
     }
 }

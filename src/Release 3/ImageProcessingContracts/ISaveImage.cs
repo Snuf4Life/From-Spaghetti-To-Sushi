@@ -4,8 +4,8 @@ using System.Text;
 
 namespace ImageProcessingContracts
 {
-   public interface IProcessImageProvider
+   public interface ISaveImage
     {
-        void Process(string dest, string path);
+        void SaveJPG(byte[] imageSrc, string target);
     }
 }

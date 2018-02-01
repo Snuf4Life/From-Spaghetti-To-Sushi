@@ -6,12 +6,18 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <WarningLevel>0</WarningLevel>
-    <OutputPath>bin\Debug\netcoreapp2.0\</OutputPath>
+    <OutputPath>C:\Users\snuf0\Source\Repos\From-Spaghetti-To-Sushi\src\Build\Host</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RevStackCore-ImageSharp" Version="0.9.0" />
+    <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="CommandLineParserNuget" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LogicModule\LogicModule.csproj" />
+    <ProjectReference Include="..\ProcessImageModule\ProcessImageModule.csproj" />
   </ItemGroup>
 
   <ItemGroup>

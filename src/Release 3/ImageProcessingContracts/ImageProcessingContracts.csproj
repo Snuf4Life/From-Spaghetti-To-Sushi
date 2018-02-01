@@ -8,4 +8,8 @@
     <OutputPath>C:\Users\snuf0\Source\Repos\From-Spaghetti-To-Sushi\src\Build\ImageProcessingContracts</OutputPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Enums\Enums.csproj" />
+  </ItemGroup>
+
 </Project>

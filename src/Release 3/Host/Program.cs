@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using CommandLineParserNuget;
 using ImageProcessingContracts;
 using ImageProcessingProvider;
 using LogicContracs;
@@ -6,6 +7,7 @@ using LogicModule;
 using ProcessImageModule;
 using System;
 using System.Diagnostics;
+using System.IO;
 
 namespace Host
 {
@@ -13,10 +15,21 @@ namespace Host
     {
         static void Main(string[] args)
         {
+            var argsParser = new CommandLineParser(args);
+            string src = argsParser["src"];
+            string dest = argsParser["dest"];
+            dest = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,
+                                dest,
+                                DateTime.Now.ToString("HH-mm-ss"));
+            if (!Directory.Exists(dest))
+                Directory.CreateDirectory(dest);
+
+            var paths = Directory.GetFiles(src);
+
             var container = Register();
             ILogic logic = container.Resolve<ILogic>();
             var sw = Stopwatch.StartNew();
-            logic.Arguments(args);
+            logic.ImagePath(paths);
             sw.Stop();
             Console.WriteLine($"Done: {sw.Elapsed}");
             Console.ReadKey();
@@ -30,9 +43,7 @@ namespace Host
             builder.RegisterType<ImageProcessModule>()
                   .As<IProcessImage>()
                   .SingleInstance();
-            builder.RegisterType<ImageProcessConsoleProvider>()
-                  .As<IProcessImageProvider>()
-                  .SingleInstance();
+          
 
             var container = builder.Build();
             return container;

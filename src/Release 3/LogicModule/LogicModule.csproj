@@ -9,10 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommandLineParserNuget" Version="1.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ImageProcessingContracts\ImageProcessingContracts.csproj" />
     <ProjectReference Include="..\LogicContracs\LogicContracs.csproj" />
   </ItemGroup>
