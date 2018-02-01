@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\snuf0\Source\Repos\From-Spaghetti-To-Sushi\src\Release 3\Build\ImageProcessorProviderImageSharp\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Contracts\ImageProcessingContracts\ImageProcessingContracts.csproj" />
+  </ItemGroup>
+
+</Project>

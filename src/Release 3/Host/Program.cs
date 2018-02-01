@@ -1,10 +1,7 @@
 ﻿using Autofac;
-using CommandLineParserNuget;
-using ImageProcessingContracts;
-using ImageProcessingProvider;
+using CommandLineParser;
 using LogicContracs;
 using LogicModule;
-using ProcessImageModule;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -15,7 +12,7 @@ namespace Host
     {
         static void Main(string[] args)
         {
-            var argsParser = new CommandLineParser(args);
+            var argsParser = new Parser(args);
             string src = argsParser["src"];
             string dest = argsParser["dest"];
             dest = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,
@@ -40,11 +37,6 @@ namespace Host
             builder.RegisterType<Logic>()
                    .As<ILogic>()
                    .SingleInstance();
-            builder.RegisterType<ImageProcessModule>()
-                  .As<IProcessImage>()
-                  .SingleInstance();
-          
-
             var container = builder.Build();
             return container;
         }

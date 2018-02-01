@@ -6,18 +6,18 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>C:\Users\snuf0\Source\Repos\From-Spaghetti-To-Sushi\src\Build\Host</OutputPath>
+    <OutputPath>C:\Users\snuf0\Source\Repos\From-Spaghetti-To-Sushi\src\Release 3\Build\Host\</OutputPath>
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.6.2" />
-    <PackageReference Include="CommandLineParserNuget" Version="1.0.1" />
+    <PackageReference Include="CommandLineParser" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LogicModule\LogicModule.csproj" />
-    <ProjectReference Include="..\ProcessImageModule\ProcessImageModule.csproj" />
+    <ProjectReference Include="..\Contracts\LogicContracs\LogicContracs.csproj" />
+    <ProjectReference Include="..\Implementations\LogicModule\LogicModule.csproj" />
   </ItemGroup>
 
   <ItemGroup>
