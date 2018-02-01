@@ -6,6 +6,7 @@ namespace ImageProcessingContracts
 {
     public interface IProcessImage
     {
-        void ProcessImage(string dest, string path);
+        void GreyScale(string Src, string Dest);
+        void Resize(string Src, string Dest, )
     }
 }

@@ -11,13 +11,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageProcessor-Core-Release
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Release 3", "Release 3", "{8CD32653-0B19-4B42-9BC0-5A4363D04704}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Host\Host.csproj", "{E9B34FFA-ED31-42CB-8657-6E9C201D54B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host", "Host\Host.csproj", "{E9B34FFA-ED31-42CB-8657-6E9C201D54B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessingConsoleProvider", "ImageProcessingProvider\ImageProcessingConsoleProvider.csproj", "{F4B39996-97CC-4530-8895-A0A883E92E4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageProcessingConsoleProvider", "ImageProcessingProvider\ImageProcessingConsoleProvider.csproj", "{F4B39996-97CC-4530-8895-A0A883E92E4C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{A1DE0E7A-D7F4-422F-BC7C-D96B63EC72F6}"
+	ProjectSection(SolutionItems) = preProject
+		Mutation.cs = Mutation.cs
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessingContracts", "ImageProcessingContracts\ImageProcessingContracts.csproj", "{7330720C-C3E5-4550-893B-A98EEB0CD977}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageProcessingContracts", "ImageProcessingContracts\ImageProcessingContracts.csproj", "{7330720C-C3E5-4550-893B-A98EEB0CD977}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementations", "Implementations", "{6084D796-24F5-4D5D-AED0-E32E7BE9776B}"
 EndProject
@@ -25,13 +28,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Providers", "Providers", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nugets", "Nugets", "{F5DAD7A2-40A9-40E6-B273-7C634582D735}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLineParserNuget", "CommandLineParserNuget\CommandLineParserNuget.csproj", "{F4F03584-12DF-4BD1-BD94-4E38B392388F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandLineParserNuget", "CommandLineParserNuget\CommandLineParserNuget.csproj", "{F4F03584-12DF-4BD1-BD94-4E38B392388F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicModule", "LogicModule\LogicModule.csproj", "{E7AA0082-F4A1-4BDA-9410-78E6A9350702}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicModule", "LogicModule\LogicModule.csproj", "{E7AA0082-F4A1-4BDA-9410-78E6A9350702}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicContracs", "LogicContracs\LogicContracs.csproj", "{BDF23E8B-4C50-4D0A-993A-A354A5B6B094}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicContracs", "LogicContracs\LogicContracs.csproj", "{BDF23E8B-4C50-4D0A-993A-A354A5B6B094}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessImageModule", "ProcessImageModule\ProcessImageModule.csproj", "{40B572EC-5E1F-4432-922A-31474AAE2319}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessImageModule", "ProcessImageModule\ProcessImageModule.csproj", "{40B572EC-5E1F-4432-922A-31474AAE2319}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{A50ECD75-D68B-4739-9330-45626E1E85E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicTests", "LogicTests\LogicTests.csproj", "{A16C7678-6D6F-43B2-9DFC-1B0875593514}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,6 +196,22 @@ Global
 		{40B572EC-5E1F-4432-922A-31474AAE2319}.Release|x64.Build.0 = Release|Any CPU
 		{40B572EC-5E1F-4432-922A-31474AAE2319}.Release|x86.ActiveCfg = Release|Any CPU
 		{40B572EC-5E1F-4432-922A-31474AAE2319}.Release|x86.Build.0 = Release|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Debug|ARM.Build.0 = Debug|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Debug|x64.Build.0 = Debug|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Debug|x86.Build.0 = Debug|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Release|ARM.Build.0 = Release|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Release|x64.ActiveCfg = Release|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Release|x64.Build.0 = Release|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Release|x86.ActiveCfg = Release|Any CPU
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -207,6 +230,8 @@ Global
 		{E7AA0082-F4A1-4BDA-9410-78E6A9350702} = {6084D796-24F5-4D5D-AED0-E32E7BE9776B}
 		{BDF23E8B-4C50-4D0A-993A-A354A5B6B094} = {A1DE0E7A-D7F4-422F-BC7C-D96B63EC72F6}
 		{40B572EC-5E1F-4432-922A-31474AAE2319} = {6084D796-24F5-4D5D-AED0-E32E7BE9776B}
+		{A50ECD75-D68B-4739-9330-45626E1E85E8} = {8CD32653-0B19-4B42-9BC0-5A4363D04704}
+		{A16C7678-6D6F-43B2-9DFC-1B0875593514} = {A50ECD75-D68B-4739-9330-45626E1E85E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AFD0A9C-B053-4CE0-8907-9D0320E02836}
