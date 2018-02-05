@@ -5,8 +5,7 @@ using System.Text;
 namespace ImageProcessingContracts
 {
     public interface IProcessImage
-    {
-        
+    {        
         void GreyScale();
         void Resize();
         void Save();

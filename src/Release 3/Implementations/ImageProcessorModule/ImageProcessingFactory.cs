@@ -7,9 +7,16 @@ namespace ProcessImageModule
 {
     class ImageProcessingFactory : IImageProcessingFactory
     {
-        public void setImageSrc(byte[] imageSrc)
+        byte[] _image;
+
+        public void SetImageSrc(byte[] imageSrc)
         {
-            throw new NotImplementedException();
+            _image = imageSrc;
+        }
+
+        public byte[] GetImage()
+        {
+            return _image;
         }
     }
 }

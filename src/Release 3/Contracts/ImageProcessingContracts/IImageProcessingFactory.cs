@@ -6,6 +6,7 @@ namespace ImageProcessingContracts
 {
    public interface IImageProcessingFactory
     {
-        void setImageSrc(byte[] imageSrc);
+        void SetImageSrc(byte[] imageSrc);
+        byte[] GetImage();
     }
 }
