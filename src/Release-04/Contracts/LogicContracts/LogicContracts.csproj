@@ -9,4 +9,8 @@
     <OutputPath>C:\Users\snuf0\Source\Repos\From-Spaghetti-To-Sushi\src\Release-04\Builds\Contracts\LogicContracts</OutputPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ImageProcessContracts\ImageProcessContracts.csproj" />
+  </ItemGroup>
+
 </Project>

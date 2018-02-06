@@ -3,7 +3,7 @@
 
 namespace ImageProcessContracts
 {
-    interface IImageProcessProvider
+    public interface IImageProcessProvider
     {
     }
 }

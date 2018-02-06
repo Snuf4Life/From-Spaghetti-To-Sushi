@@ -2,7 +2,7 @@
 
 namespace ImageProcess
 {
-    public class Class1
+    public interface IProcess
     {
     }
 }

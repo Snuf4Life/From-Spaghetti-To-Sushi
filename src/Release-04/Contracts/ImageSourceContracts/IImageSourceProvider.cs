@@ -3,7 +3,7 @@
 
 namespace ImageSourceContracts
 {
-    interface IImageSourceProvider
+    public interface IImageSourceProvider
     {
     }
 }
