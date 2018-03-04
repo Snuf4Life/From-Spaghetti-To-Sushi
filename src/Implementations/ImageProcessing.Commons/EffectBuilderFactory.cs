@@ -54,7 +54,7 @@ namespace ImageProcessing.Commons
         /// Use as empty builder for initial step of fluent api.
         /// expected single instance per EffectBuilderFactory.
         /// </summary>
-        private class EmptyEffectBuilder : EffectBuilderBase
+        private class EmptyEffectBuilder ............: EffectBuilderBase
         {
             private readonly IEffectProviderFactory[] _providers;
 
